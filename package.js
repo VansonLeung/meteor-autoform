@@ -1,8 +1,8 @@
 Package.describe({
-  name: "aldeed:autoform",
+  name: "vansonhk:autoform",
   summary: "Easily create forms with automatic insert and update, and automatic reactive validation.",
   git: "https://github.com/aldeed/meteor-autoform.git",
-  version: "5.8.1"
+  version: "5.8.3"
 });
 
 Package.onUse(function(api) {
@@ -225,7 +225,7 @@ Package.onUse(function(api) {
 });
 
 Package.onTest(function (api) {
-  api.use(['aldeed:autoform', 'tinytest', 'underscore', 'mongo']);
+  api.use(['vansonhk:autoform', 'tinytest', 'underscore', 'mongo']);
   api.use('momentjs:moment', 'client');
   api.addFiles(['tests/utility-tests.js', 'tests/autoform-tests.js']);
 });
